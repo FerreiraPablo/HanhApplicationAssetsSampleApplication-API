@@ -8,10 +8,16 @@ using Hahn.ApplicationProcess.February2021.Domain.Models;
 
 namespace Hahn.ApplicationProcess.February2021.Data.Repositories.Countries
 {
+    /// <summary>
+    /// CountryRepository implementation based on restcountries.eu
+    /// </summary>
     public class RestCountryRepository : ICountryRepository
     {
         private readonly HttpClient _client;
 
+        /// <summary>
+        /// Constructor of the RestCountryRepository
+        /// </summary>
         public RestCountryRepository()
         {
             _client = new HttpClient

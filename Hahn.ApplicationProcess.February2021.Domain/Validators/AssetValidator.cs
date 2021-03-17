@@ -7,6 +7,9 @@ using Hahn.ApplicationProcess.February2021.Domain.Models;
 
 namespace Hahn.ApplicationProcess.February2021.Domain.Validators
 {
+    /// <summary>
+    /// Asset Validator
+    /// </summary>
     public class AssetValidator : AbstractValidator<Asset>
     {
         private readonly ICountryRepository _countryRepository;

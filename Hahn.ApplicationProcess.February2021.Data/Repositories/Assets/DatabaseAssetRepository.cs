@@ -41,9 +41,9 @@ namespace Hahn.ApplicationProcess.February2021.Data.Repositories.Assets
 
 
         /// <summary>
-        /// Returns an specific asset by it's identity.
+        /// Returns all assets and filters by the specified predicate if available.
         /// </summary>
-        /// <param name="id">The asset identity</param>
+        /// <param name="predicate">A predicate to filter the results</param>
         /// <returns>The specified asset</returns>
         public IEnumerable<Asset> All(Expression<Func<Asset, bool>> predicate = null)
         {

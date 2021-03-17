@@ -3,6 +3,9 @@ using Hahn.ApplicationProcess.February2021.Domain.Models;
 
 namespace Hahn.ApplicationProcess.February2021.Domain.BusinessLogic
 {
+    /// <summary>
+    /// Asset Logic Contract
+    /// </summary>
     public interface IAssetsLogic
     {
         /// <summary>

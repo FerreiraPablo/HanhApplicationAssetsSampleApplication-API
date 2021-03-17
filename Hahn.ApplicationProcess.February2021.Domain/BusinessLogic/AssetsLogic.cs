@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation;
 using Hahn.ApplicationProcess.February2021.Domain.BusinessLogic.Assets.Exceptions;
@@ -8,11 +7,19 @@ using Hahn.ApplicationProcess.February2021.Domain.Models;
 
 namespace Hahn.ApplicationProcess.February2021.Domain.BusinessLogic
 {
+    /// <summary>
+    /// Asset Logic Implementation
+    /// </summary>
     public class AssetsLogic : IAssetsLogic
     {
         private readonly IAssetRepository _assetRepository;
         private readonly AbstractValidator<Asset> _assetValidator;
 
+        /// <summary>
+        /// Constructor of the Asset Logic
+        /// </summary>
+        /// <param name="assetRepository">An asset repository</param>
+        /// <param name="assetValidator">An asset validator</param>
         public AssetsLogic(IAssetRepository assetRepository, AbstractValidator<Asset> assetValidator)
         {
             _assetRepository = assetRepository;

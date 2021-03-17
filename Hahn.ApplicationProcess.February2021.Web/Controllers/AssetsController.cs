@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Hahn.ApplicationProcess.February2021.Domain.BusinessLogic;
@@ -11,13 +10,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hahn.ApplicationProcess.February2021.Web.Controllers
 {
+    /// <summary>
+    /// Asset API Controller
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [Produces("application/json")]
     public class AssetsController : ControllerBase
     {
         private readonly IAssetsLogic _assetsLogic;
         private readonly IAssetRepository _assetRepository;
 
+        /// <summary>
+        /// Constructor of the Asset Controller
+        /// </summary>
+        /// <param name="assetsLogic">The asset logic implementation to be used.</param>
+        /// <param name="assetRepository">The asset repository to be used.</param>
         public AssetsController(IAssetsLogic assetsLogic, IAssetRepository assetRepository)
         {
             _assetsLogic = assetsLogic;

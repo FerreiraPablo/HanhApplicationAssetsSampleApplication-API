@@ -4,6 +4,9 @@ using Hahn.ApplicationProcess.February2021.Domain.Models;
 
 namespace Hahn.ApplicationProcess.February2021.Domain.Interfaces
 {
+    /// <summary>
+    /// Country Repository Contract
+    /// </summary>
     public interface ICountryRepository
     {
         /// <summary>
