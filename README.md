@@ -15,7 +15,7 @@ Using the .NET 5 SDK (CLI), in the solution root directory you can run the follo
 dotnet run --project ./Hahn.ApplicationProcess.February2021.Web
 ```
 
-Or using docker 
+Or using docker and go to http://localhost:8000
 ```
 docker-compose -f "docker-compose.yml" up -d --build;
 ```
